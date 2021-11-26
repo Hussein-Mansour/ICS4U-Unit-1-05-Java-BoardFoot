@@ -55,36 +55,44 @@ final class BoardFoot {
             final Scanner myObj = new Scanner(System.in);
             System.out.print("This program figures out the Length of a "
                                + "wooden board that is 1 bourd foot "
-                               + "in dimension." 
+                               + "in dimension."
                                + "(1 board foot is 144 inches³ of wood.)"
                                + SPACE);
             // Create a scanner object 2
             System.out.print(SPACE + "Enter the width(inch): ");
-            final double UserInputWidth = myObj.nextDouble();
+            final double userinputwidth = myObj.nextDouble();
             // Create a scanner object 2
             System.out.print("Enter the height(inch): ");
-            final double UserInputHeight = myObj.nextDouble();
+            final double userinputheight = myObj.nextDouble();
 
             // Calling the Function
-            double Calculation =  BoardFoot(UserInputWidth, UserInputHeight);
+            final double calculation = boardfoot(userinputwidth, userinputheight);
             System.out.print(SPACE + "The wood should be "
-                                   + Calculation
+                                   + calculation
                                    + " inch(es) long."
                                    + SPACE);
 
         } catch (java.util.InputMismatchException errorCode) {
             // Invalid Input.
-            System.out.println("Something was not a number.");
+            System.out.println(SPACE + "Something was not a number.");
         }
         System.out.println(SPACE + "Done.");
     }
 
-    public static double BoardFoot(double width, double height) {
+    /**
+    * The boardfoot Function.
+    *
+    * @param width
+    *
+    * @param height
+    *
+    * @return the n-th element of the object
+    */
+    public static double boardfoot(double width, double height) {
         // calculation
-        double calculation = width * height;
-        double finalcalc = 144 / calculation; 
+        final double calculation = width * height;
+        final double finalcalc = 144 / calculation;
         // return value
         return finalcalc;
     }
-
 }
