@@ -1,28 +1,28 @@
-/* The "BoardFoot" that uses decision statements
+/* The "BoardFoot" To figures out the lenght of a wooden board.
 *
 * @author  Hussein
 * @version 1.0
-* @since 2020-11-23
+* @since 2020-11-25
 */
 
 import java.util.Scanner;
 
 /**
-* This is the standard "GuessGame" program.
+* This is the standard "BoardFoot" program.
 */
 
 final class BoardFoot {
 
     /**
-    * Declaring exponent variable.
+    * Declaring int.
     */
     public static final int NUMB = 7;
     /**
-    * Declaring exponent variable.
+    * Declaring int.
     */
     public static final int NUMBB = 6;
     /**
-    * Declaring exponent variable.
+    * Declaring String.
     */
     public static final String SPACE = "\n";
 
